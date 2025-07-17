@@ -6,6 +6,7 @@ index:
 	qlever index --overwrite-existing
 
 startDB:
-	qlever stop && qlever start
+	qlever stop || qlever start
+	
 startUI:
-	qlever ui --stop && qlever ui --host-name localhost
+	qlever ui --stop || qlever ui --host-name localhost
